@@ -21,10 +21,9 @@ Aplicativo simples em React Native para cadastro e exibição de dados do usuár
 - expo-linear-gradient
 
 ## Link GitHub
-https://github.com/Gutemberg149/MobileCP1
+
+https://github.com/Gutemberg149/CP1AppMobile
 
 ## Link Video
 
-
-
-
+https://vimeo.com/manage/videos/1175755764

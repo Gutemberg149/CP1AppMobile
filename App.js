@@ -17,6 +17,7 @@ export default function App() {
   useEffect(() => {
     console.log("App carregado");
   }, []);
+  
   return (
     <LinearGradient colors={["#946EC2", "#a1c4fd", "#c2e9fb"]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 0.5 }} style={{ flex: 1 }}>
       <SafeAreaView style={styles.container}>
@@ -37,7 +38,6 @@ export default function App() {
         <Button title="Clique aqui para enviar" onPress={() => setMostrarDados(!mostrarDados)} color="#946EC2" />
 
         {mostrarDados && <DisplayDados nome={nome} curso={curso} diciplina={diciplina} descricao={descricao} />}
-        
       </SafeAreaView>
     </LinearGradient>
   );
