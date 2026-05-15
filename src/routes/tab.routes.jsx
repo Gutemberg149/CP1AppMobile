@@ -1,5 +1,5 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from "../screens/HomeScreen"
+import HomeScreen from "../screens/Cadastro"
 import {Feather} from "@expo/vector-icons"
 
 const Tab = createBottomTabNavigator();

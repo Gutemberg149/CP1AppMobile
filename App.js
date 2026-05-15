@@ -1,21 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import TabRoutes from "./src/routes/tab.routes"
 import { NavigationContainer } from '@react-navigation/native';
+import TabRoutes from "./src/routes/tab.routes";
+import { UserProvider } from './src/contexts/UserContext';
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <TabRoutes/>
-    </NavigationContainer>
+    <UserProvider>
+      <NavigationContainer>
+        <TabRoutes />
+      </NavigationContainer>
+    </UserProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
