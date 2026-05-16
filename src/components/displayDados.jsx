@@ -14,8 +14,6 @@ export default function DisplayDados({nome, curso, diciplina, descricao }) {
     )
 }
 
-
-
 const styles = StyleSheet.create({
     card: {
         width: "80%",

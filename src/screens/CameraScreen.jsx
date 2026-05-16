@@ -2,12 +2,11 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Alert, Button, Image, Linking, TouchableOpacity } from 'react-native';
 import { useState, useEffect, useRef, useContext } from 'react';
 
-// Bibliotecas necessárias
 import * as Sharing from 'expo-sharing';
 import { CameraView, useCameraPermissions } from 'expo-camera';
 import * as MediaLibrary from "expo-media-library";
 
-// Importe o seu contexto para salvar a foto globalmente
+
 import { UserContext } from '../contexts/UserContext';
 
 export default function CameraScreen({ navigation }) {
@@ -40,7 +39,7 @@ export default function CameraScreen({ navigation }) {
     );
   }
 
-  // Função para tirar foto e atualizar o contexto global
+
   const tirarFoto = async () => {
     if (cameraRef.current) {
       const dadoFoto = await cameraRef.current.takePictureAsync();
@@ -48,11 +47,10 @@ export default function CameraScreen({ navigation }) {
     }
   };
 
-  // Esta função agora envia a foto para o perfil e volta de tela
   const usarComoFotoPerfil = () => {
     if (foto?.uri) {
-      updateUserData({ foto: foto.uri }); // Salva no Contexto Global
-      navigation.goBack(); // Volta para a tela de Cadastro
+      updateUserData({ foto: foto.uri });
+      navigation.goBack(); 
     }
   };
 

@@ -4,7 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { LinearGradient } from "expo-linear-gradient";
 import { StatusBar } from "expo-status-bar";
 
-// Importa o contexto para exibir os dados
+
 import { UserContext } from "../contexts/UserContext";
 
 export default function Perfil() {
@@ -21,7 +21,6 @@ export default function Perfil() {
         <SafeAreaView style={styles.container}>
           <StatusBar style="auto" />
           
-          {/* Exibe a foto capturada ou a logo padrão se estiver vazio */}
           <Image
             style={styles.imagePerfil}
             source={{
@@ -31,7 +30,6 @@ export default function Perfil() {
 
           <Text style={styles.titulo}>Perfil do Aluno</Text>
 
-          {/* Cards de Informação seguindo o estilo dos inputs do cadastro */}
           <View style={styles.infoBox}>
             <Text style={styles.label}>NOME:</Text>
             <Text style={styles.valor}>{userData.nome || "Não informado"}</Text>
@@ -83,7 +81,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#946EC2",
     borderRadius: 12,
     padding: 10,
-    overflow: 'hidden', // Garante que o borderRadius funcione com fundo colorido no iOS
+    overflow: 'hidden', 
   },
   imagePerfil: {
     width: 180,
@@ -104,7 +102,7 @@ const styles = StyleSheet.create({
   },
   infoBoxEndereco: {
     width: "85%",
-    backgroundColor: "#f0f8ff", // Um azul levemente diferente para destacar a API
+    backgroundColor: "#f0f8ff", 
     borderWidth: 2,
     borderColor: "#946EC2",
     borderRadius: 12,
