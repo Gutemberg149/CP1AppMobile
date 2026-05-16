@@ -1,32 +1,3 @@
-<!-- # App de Cadastro
-
-Aplicativo simples em React Native para cadastro e exibição de dados do usuário.
-
-## Funcionalidades
-
-- Formulário com campos:
-  - Nome
-  - Curso
-  - Disciplina
-  - Descrição
-- Fundo com gradiente
-- Exibição dos dados em formato de cartão
-- Botão para mostrar/ocultar os dados cadastrados
-
-## Tecnologias
-
-- React Native
-- Expo
-- react-native-safe-area-context
-- expo-linear-gradient
-
-## Link GitHub
-
-https://github.com/Gutemberg149/CP1AppMobile
-
-## Link Video
-
-https://vimeo.com/manage/videos/1175755764 -->
 # Aplicativo de Cadastro Acadêmico
 
 Esse é um aplicativo mobile desenvolvido em React Native utilizando o ecossistema Expo. O projeto foi estruturado com foco em boas práticas de design e arquitetura de dados, oferecendo fluxos de cadastro de alunos, persistência de estados globais, integração com serviços externos de localização (API ViaCEP) e controle de acesso a recursos nativos de hardware (Câmera).
@@ -55,7 +26,7 @@ Esse é um aplicativo mobile desenvolvido em React Native utilizando o ecossiste
 ---
 
 ## 🎥 Link do video 
-* 
+ https://vimeo.com/1192836564?share=copy&fl=sv&fe=ci
 
 ## 👥 Equipe de Desenvolvimento (Devs)
 
@@ -64,13 +35,4 @@ O projeto foi planejado, projetado e codificado por:
 * **Gutemberg Rocha** — *RM 562267*
 * **Gustavo Sartori** — *RM 561650*
 
----
-
-## 📦 Como Executar o Projeto
-
-1. Certifique-se de ter o **Node.js** e o **Expo CLI** instalados em sua máquina.
-2. Clone o repositório do projeto.
-3. No terminal, acesse a pasta raiz e instale as dependências:
-   ```bash
-   npm install
 
